@@ -82,7 +82,39 @@
           </p>
         </td>
       </tr>
-      
+
+      <tr onmouseout="sure_stop()" onmouseover="sure_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='SURE_image'>
+            <img src='images/2023ACL_SURE.jpg' width="170"></div>
+            <img src='images/2023ACL_SURE.jpg' width="170">
+          </div>
+          <script type="text/javascript">
+            function sure_start() {
+              document.getElementById('SURE_image').style.opacity = "1";
+            }
+
+            function sure_stop() {
+              document.getElementById('SURE_image').style.opacity = "0";
+            }
+            sure_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2309.11382.pdf">
+            <span class="papertitle">Multimodal Recommendation Dialog with Subjective Preference: A New Challenge and Benchmark</span>
+          </a>
+          <br>
+          <strong>Yuxing Long</strong>, Binyuan Hui, Caixia Yuan, Fei Huang, Yongbin Li, Xiaojie Wang
+          <br>
+          <a href="https://arxiv.org/pdf/2305.18212.pdf">arXiv</a>
+          <p></p>
+          <p>
+          A new dataset for multimodal recommendation dialog with subjective preferences.
+          </p>
+        </td>
+      </tr>
 
           </tbody></table>
 
