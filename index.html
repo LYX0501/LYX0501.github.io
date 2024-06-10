@@ -52,7 +52,45 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
+
+      <tr onmouseout="discussnav_stop()" onmouseover="discussnav_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='InstructNav_image'>
+            <img src='images/2024InstrucNav.jpg' width="170"></div>
+            <img src='images/2024InstrucNav.jpg' width="170">
+          </div>
+          <script type="text/javascript">
+            function discussnav_start() {
+              document.getElementById('InstructNav_image').style.opacity = "1";
+            }
+
+            function discussnav_stop() {
+              document.getElementById('InstructNav_image').style.opacity = "0";
+            }
+            discussnav_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2406.04882.pdf">
+            <span class="papertitle">InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment</span>
+          </a>
+          <br>
+          <strong>Yuxing Long</strong>, Wenzhe Cai, Hongcheng Wang, Guanqi Zhan, Hao Dong
+          <br>
+          <em>Arxiv</em>
+          <br>
+          <a href="https://arxiv.org/pdf/2406.04882.pdf">Paper</a>
+	  /
+	  <a href="https://sites.google.com/view/instructnav">Project</a>
+	  /
+	  Code
+          <p></p>
+          <p>
+          The first zero-shot generic instruction navigation system without any pre-built maps.
+          </p>
+        </td>
+      </tr>
     
       <tr onmouseout="discussnav_stop()" onmouseover="discussnav_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
