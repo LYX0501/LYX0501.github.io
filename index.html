@@ -53,7 +53,46 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-      <tr onmouseout="discussnav_stop()" onmouseover="instructnav_start()">
+      <tr onmouseout="checkmanual_stop()" onmouseover="checkmanual_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='checkmanual_image'>
+            <img src='images/2025CheckManul.jpg' width="170"></div>
+            <img src='images/2025CheckManul.jpg' width="170">
+          </div>
+          <script type="text/javascript">
+            function checkmanual_start() {
+              document.getElementById('checkmanual_image').style.opacity = "1";
+            }
+
+            function checkmanual_stop() {
+              document.getElementById('checkmanual_image').style.opacity = "0";
+            }
+            checkmanual_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2406.04882.pdf">
+            <span class="papertitle">CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation</span>
+          </a>
+          <br>
+          <strong>Yuxing Long</strong>, Jiyao Zhang, Mingjie Pan, Tianshu Wu, Taewhan Kim, Hao Dong
+          <br>
+          <em>Conference on Computer Vision and Pattern Recognition (CVPR) 2025</em>
+          <br>
+          Paper
+	  /
+	  Project
+	  /
+	  Code
+          <p></p>
+          <p>
+          The first benchmark about manual-based appliance manipulation.
+          </p>
+        </td>
+      </tr>
+		  
+      <tr onmouseout="instructnav_stop()" onmouseover="instructnav_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='InstructNav_image'>
