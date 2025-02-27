@@ -91,6 +91,40 @@
           </p>
         </td>
       </tr>
+
+      <tr onmouseout="manipllm_stop()" onmouseover="manipllm_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='manipllm_image'>
+            <img src='images/2024CVPR_ManipLLM.jpg' width="170"></div>
+            <img src='images/2024CVPR_ManipLLM.jpg' width="170">
+          </div>
+          <script type="text/javascript">
+            function manipllm_start() {
+              document.getElementById('manipllm_image').style.opacity = "1";
+            }
+
+            function manipllm_stop() {
+              document.getElementById('manipllm_image').style.opacity = "0";
+            }
+            checkmanual_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/pdf/2312.16217">
+            <span class="papertitle">ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation</span>
+          </a>
+          <br>
+          Xiaoqi Li, Mingxu Zhang, Yiran Geng, Haoran Geng, <strong>Yuxing Long</strong>, Yan Shen, Renrui Zhang, Jiaming Liu, Hao Dong
+          <br>
+          <em>Conference on Computer Vision and Pattern Recognition (CVPR) 2024</em>
+          <br>
+          <a href="https://arxiv.org/pdf/2312.16217">Paper</a>
+	  /
+	  <a href="https://github.com/clorislili/ManipLLM">Code</a>
+          <p></p>
+        </td>
+      </tr>
 		  
       <tr onmouseout="instructnav_stop()" onmouseover="instructnav_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
