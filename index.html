@@ -53,6 +53,43 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+      <tr onmouseout="navspace_stop()" onmouseover="navspace_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='navspace_image'>
+            <img src='images/2025NavSpace.jpg' width="170"></div>
+            <img src='images/2025NavSpace.jpg' width="170">
+          </div>
+          <script type="text/javascript">
+            function navspace_start() {
+              document.getElementById('navspace_image').style.opacity = "1";
+            }
+
+            function navspace_stop() {
+              document.getElementById('navspace_image').style.opacity = "0";
+            }
+            navspace_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="">
+            <span class="papertitle">NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions</span>
+          </a>
+          <br>
+          Haolin Yang*, <strong>Yuxing Long*</strong>, Zhuoyuan Yu, Zihan Yang, Minghan Wang, Jiapeng Xu, Yihan Wang, Ziyan Yu, Wenzhe Cai, Lei Kang, Hao Dong
+          <br>
+          <em>Arxiv</em>
+          <br>
+          <a href="https://arxiv.org/abs/2510.08173">Paper</a>
+	  /
+	  <a href="https://github.com/TidalHarley/NavSpace">Project</a>
+          <p></p>
+          <p>
+          The first benchmark and model for navigation spatial intelligence.
+          </p>
+        </td>
+      </tr>
+			  
       <tr onmouseout="correctnav_stop()" onmouseover="correctnav_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
