@@ -258,28 +258,33 @@ h2 {
 }
 
 .one {
-  width: 170px;
-  height: 170px;
+  width: 182px;
+  height: auto;
+  aspect-ratio: 1.28 / 1;
   position: relative;
-  border-radius: 16px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 18px;
   overflow: hidden;
+  border: 1px solid rgba(15, 23, 42, 0.06);
   box-shadow: var(--shadow-soft);
-  background: #dce6f2;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fc 100%);
 }
 
-.one img,
+.one > img,
 .two img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   display: block;
+  border-radius: 12px;
+  background: #ffffff;
 }
 
 .two {
-  width: 170px;
-  height: 170px;
   position: absolute;
-  inset: 0;
+  inset: 10px;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -webkit-transition: opacity .2s ease-in-out;
@@ -375,11 +380,14 @@ span.highlight {
     border-radius: 0 0 20px 20px;
   }
 
-  .one,
-  .two {
+  .one {
     width: min(100%, 220px);
     height: auto;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1.28 / 1;
     margin: 0 auto;
+  }
+
+  .two {
+    inset: 10px;
   }
 }
