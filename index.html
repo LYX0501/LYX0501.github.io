@@ -53,6 +53,45 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
 
+      <tr onmouseout="applianceplan_stop()" onmouseover="applianceplan_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='applianceplan_image'>
+            <img src='images/2026AppliancePlan.png' width="170"></div>
+            <img src='images/2026AppliancePlan.png' width="170">
+          </div>
+          <script type="text/javascript">
+            function applianceplan_start() {
+              document.getElementById('applianceplan_image').style.opacity = "1";
+            }
+
+            function applianceplan_stop() {
+              document.getElementById('applianceplan_image').style.opacity = "0";
+            }
+            applianceplan_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="">
+            <span class="papertitle">Scaling Manual-Grounded Appliance Manipulation with Data Synthesis and Unified Planning</span>
+          </a>
+          <br>
+          Yuzheng Gao*, <strong>Yuxing Long*</strong>, Lei Kang, Yuchong Guo, Ziyan Yu, Shangqing Mao, Jiyao Zhang, Ruihai Wu, Dongjiang Li, Hui Shen, Hao Dong
+          <br>
+          <em>ACM International Conference on Multimedia (ACM MM) 2026</em>
+          <br>
+          <a href="">Paper</a>
+		  /
+		  <a href="">Project</a>
+		  /
+		  <a href="">Code</a>
+          <p></p>
+          <p>
+          The first end-to-end appliance manipulation planning large model.
+          </p>
+        </td>
+      </tr>
+			  
       <tr onmouseout="realappliance_stop()" onmouseover="realappliance_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
