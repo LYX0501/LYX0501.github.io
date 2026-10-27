@@ -12,11 +12,11 @@
     canvas.width = Math.round(width * ratio);
     canvas.height = Math.round(height * ratio);
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
-    const count = width < 760 ? 22 : Math.min(65, Math.round(width * height / 17000));
+    const count = width < 760 ? 24 : Math.min(70, Math.round(width * height / 15000));
     points = Array.from({ length: count }, () => ({
       x: Math.random() * width, y: Math.random() * height,
-      vx: (Math.random() - 0.5) * 7, vy: (Math.random() - 0.5) * 7,
-      radius: 1 + Math.random() * 1.2
+      vx: (Math.random() - 0.5) * 12, vy: (Math.random() - 0.5) * 12,
+      radius: 1.3 + Math.random() * 1.2
     }));
   }
   function draw(now) {
@@ -37,11 +37,11 @@
       for (let j = i + 1; j < points.length; j++) {
         const q = points[j], distance = Math.hypot(p.x - q.x, p.y - q.y);
         if (distance > 165) continue;
-        context.strokeStyle = `rgba(68, 139, 181, ${0.18 * (1 - distance / 165)})`;
-        context.lineWidth = 0.75;
+        context.strokeStyle = `rgba(68, 139, 181, ${0.28 * (1 - distance / 165)})`;
+        context.lineWidth = 0.9;
         context.beginPath(); context.moveTo(p.x, p.y); context.lineTo(q.x, q.y); context.stroke();
       }
-      context.fillStyle = 'rgba(58, 135, 180, 0.30)';
+      context.fillStyle = 'rgba(58, 135, 180, 0.43)';
       context.beginPath(); context.arc(p.x, p.y, p.radius, 0, Math.PI * 2); context.fill();
     }
   }
