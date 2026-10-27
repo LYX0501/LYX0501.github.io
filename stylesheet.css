@@ -678,3 +678,10 @@ h2:has(.section-icon) { display: flex; align-items: center; gap: 11px; }
   .section-icon { width: 23px; height: 23px; flex-basis: 23px; }
   h2:has(.section-icon) { gap: 9px; }
 }
+
+/* Lightweight covers stay visible until a decoded video frame is playing. */
+.paper-media { position: relative; }
+.video-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 10px; pointer-events: none; }
+.paper-video { position: relative; background: transparent; opacity: 0; transition: opacity .18s ease; }
+.paper-video.is-playing, .paper-video:focus-visible { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .paper-video { transition: none; } }
