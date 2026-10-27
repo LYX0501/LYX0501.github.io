@@ -1,6 +1,6 @@
 # Publication media
 
-Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Eight are displayed inline; VTInstructor and NavSpace use their original figures, with video links retained at the user's request. The inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all eight inline videos on initial page load.
+Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Nine are displayed inline, including the user-supplied One Scan is Enough demonstration; VTInstructor and NavSpace use their original figures, with video links retained at the user's request. The inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all nine inline videos on initial page load.
 
 | Publication | Official source | Selected video |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Backup before this change: `backup/before-four-panel-videos-2026-10-27` (commit 
 | InstructNav | https://openreview.net/attachment?id=fCDOfpTCzZ&name=supplementary_material | Official CoRL 2024 supplement, `corl_sup/InstructNav_Video.mp4`. Real-robot excerpt 132–152 seconds, top-right panel cropped to 540×356 at (668, 0). Paper page: https://openreview.net/forum?id=fCDOfpTCzZ (CC BY 4.0). |
 | PixNav | https://raw.githubusercontent.com/wzcai99/Pixel-Navigator/master/assets/objnav_fps.mp4 | Complete simulated navigation demonstration, resized. Explicitly labeled as simulation. |
 
-The added captions distinguish real-robot footage from simulation and method demonstrations. Full project links and original figure links remain available. One Scan is Enough retains Figure 1 as requested. No suitable paper-specific official demonstrations were found for Embodied3DBench or the four 2023 publications; their figures remain unchanged.
+The added captions distinguish real-robot footage from simulation and method demonstrations. Full project links and original figure links remain available. One Scan is Enough uses the user-supplied video, with Figure 1 retained through its Figure link. No suitable paper-specific official demonstrations were found for Embodied3DBench or the four 2023 publications; their figures remain unchanged.
 
 Pre-expansion backup: `backup/before-more-demos-2026-10-27` (commit `15e09cb`).
 
@@ -49,3 +49,9 @@ The table preserves the original video sources. Full-size paper figures remain a
 The DSTC11 and SPRING figures use CSS viewports to remove their empty top margins (230 px and 155 px respectively). This preserves all scientific labels and the original image files; clicking a figure opens its original source.
 
 Pre-autoplay backup: `backup/before-autoplay-2026-10-27` (commit `205a871`). All publication media areas are capped at 190 px; desktop cards share a 232 px minimum height while longer text can expand naturally.
+
+## One Scan is Enough user-supplied video
+
+Added on 2026-10-27 at the user’s request. `videos/onescan.mp4` is a web-optimized copy of the supplied video (38.69 s, 1972×1330 source). The entire frame and duration are preserved, resized to 960×648, H.264 / yuv420p, 24 fps, no audio, with fast-start metadata. Native muted autoplay, loop, inline playback, and controls match the other demonstrations. Figure 1 remains linked. The original local file is unchanged.
+
+Backup before this change: `backup/before-onescan-video-2026-10-27` (commit `1e2b46c`).
