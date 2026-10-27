@@ -183,7 +183,32 @@ h2 {
 .profile-links {
   margin-top: 18px;
   color: var(--text);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 18px;
 }
+
+.profile-links a,
+.paper-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.link-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+}
+
+.profile-links .link-icon {
+  width: 17px;
+  height: 17px;
+}
+
 
 .hero-copy {
   width: 72% !important;
