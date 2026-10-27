@@ -53,6 +53,41 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
 
+      <tr onmouseout="onescan_stop()" onmouseover="onescan_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='onescan_image'>
+            <img src='images/2026OneScanIsEnough.png' width="170" alt="One Scan is Enough: Figure 1"></div>
+            <img src='images/2026OneScanIsEnough.png' width="170" alt="One Scan is Enough: Figure 1">
+          </div>
+          <script type="text/javascript">
+            function onescan_start() {
+              document.getElementById('onescan_image').style.opacity = "1";
+            }
+
+            function onescan_stop() {
+              document.getElementById('onescan_image').style.opacity = "0";
+            }
+            onescan_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2610.33794">
+            <span class="papertitle">One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation</span>
+          </a>
+          <br>
+          Zhuoyuan Yu*, <strong>Yuxing Long*</strong>, Du Wang*, Junyang Wang, Hongwei Fan, Hao Dong
+          <br>
+          <em>Conference on Neural Information Processing Systems (NeurIPS) 2026</em>
+          <br>
+          <a href="https://arxiv.org/abs/2610.33794">Paper</a>
+          <p></p>
+          <p>
+          Demonstration-free adaptation for language-guided navigation from a single iPhone scan.
+          </p>
+        </td>
+      </tr>
+
       <tr onmouseout="applianceplan_stop()" onmouseover="applianceplan_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
