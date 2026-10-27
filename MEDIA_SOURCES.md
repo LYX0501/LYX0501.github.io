@@ -1,6 +1,6 @@
 # Publication media
 
-Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Nine are displayed inline, including the user-supplied One Scan is Enough demonstration; VTInstructor and NavSpace use their original figures, with video links retained at the user's request. The inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all nine inline videos on initial page load.
+Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Ten are displayed inline, including the user-supplied One Scan is Enough and SURE demonstrations; VTInstructor and NavSpace use their original figures, with video links retained at the user's request. The inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all ten inline videos on initial page load.
 
 | Publication | Official source | Selected video |
 | --- | --- | --- |
@@ -40,7 +40,7 @@ Backup before this change: `backup/before-four-panel-videos-2026-10-27` (commit 
 | InstructNav | https://openreview.net/attachment?id=fCDOfpTCzZ&name=supplementary_material | Official CoRL 2024 supplement, `corl_sup/InstructNav_Video.mp4`. Real-robot excerpt 132–152 seconds, top-right panel cropped to 540×356 at (668, 0). Paper page: https://openreview.net/forum?id=fCDOfpTCzZ (CC BY 4.0). |
 | PixNav | https://raw.githubusercontent.com/wzcai99/Pixel-Navigator/master/assets/objnav_fps.mp4 | Complete simulated navigation demonstration, resized. Explicitly labeled as simulation. |
 
-Visible captions below all videos were removed at the user’s request; descriptive accessibility labels and this source record retain the media types. Full project links and original figure links remain available. One Scan is Enough uses the user-supplied video, with Figure 1 retained through its Figure link. No suitable paper-specific official demonstrations were found for Embodied3DBench or the four 2023 publications; their figures remain unchanged.
+Visible captions below all videos were removed at the user’s request; descriptive accessibility labels and this source record retain the media types. Full project links and original figure links remain available. One Scan is Enough uses the user-supplied video, with Figure 1 retained through its Figure link. No suitable paper-specific official demonstrations were found for Embodied3DBench or the remaining three 2023 publications; their figures remain unchanged.
 
 Pre-expansion backup: `backup/before-more-demos-2026-10-27` (commit `15e09cb`).
 
@@ -59,3 +59,5 @@ Backup before this change: `backup/before-onescan-video-2026-10-27` (commit `1e2
 Video captions removed on 2026-10-27. All players now share the same centered 190 px media area without caption spacing. Backup: `backup/before-remove-video-captions-2026-10-27` (commit `9c0bb69`).
 
 One Scan crop update (2026-10-27): the inline player now uses `onescan-cropped.mp4`. A fixed 1872×1080 crop at (50,124) from the original 1972×1330 source removes the slide heading, bottom progress/navigation bar, and outer margins. The full sequence and original speed remain; central diagram labels and statistics remain part of the demonstration. Output is 960×554, H.264, 24 fps, muted, with a poster from 5 s. The uncropped copy remains archived as `onescan.mp4`. Backup: `backup/before-onescan-crop-2026-10-27` (commit `07764b2`).
+
+SURE video (2026-10-27): `videos/sure.mp4` uses the user-supplied 25 s desktop video. Original 826×478 H.264/yuv420p video frames and 25 fps are preserved without re-encoding; only the MP4 container is optimized for fast start. Dialogue text is part of the demonstration and remains intact. Native muted autoplay/loop and viewport loading match the other videos; no extra visible caption is added. The original figure is retained through Figure. Backup: `backup/before-sure-video-2026-10-27` (commit `eb8e5e2`).
