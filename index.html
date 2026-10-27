@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Yuxing Long's academic homepage, featuring research on robot manipulation and embodied navigation.">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261027-layout">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
   </head>
 
   <body>
-    <table class="page-shell" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="page-shell" style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table class="hero-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -44,35 +44,27 @@
             </tr>
           </tbody></table>
           
-          <table class="section-heading" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>  
-
-      <tr onmouseout="onescan_stop()" onmouseover="onescan_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='onescan_image'>
-            <img src='images/2026OneScanIsEnough.png' width="170" alt="One Scan is Enough: Figure 1"></div>
-            <img src='images/2026OneScanIsEnough.png' width="170" alt="One Scan is Enough: Figure 1">
-          </div>
-          <script type="text/javascript">
-            function onescan_start() {
-              document.getElementById('onescan_image').style.opacity = "1";
-            }
-
-            function onescan_stop() {
-              document.getElementById('onescan_image').style.opacity = "0";
-            }
-            onescan_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2610.33794">
+          <section class="publications" aria-labelledby="publications-title">
+            <div class="publications-heading">
+              <h2 id="publications-title">Publications</h2>
+              <nav class="year-nav" aria-label="Jump to publication year">
+                <a href="#publications-2026">2026</a>
+                <a href="#publications-2025">2025</a>
+                <a href="#publications-2024">2024</a>
+                <a href="#publications-2023">2023</a>
+              </nav>
+            </div>
+            <section class="publication-year" aria-labelledby="publications-2026">
+              <div class="year-heading">
+                <h3 id="publications-2026">2026</h3>
+                <span>7 papers</span>
+              </div>
+              <article class="publication">
+                <a class="paper-image" href="images/2026OneScanIsEnough.png" aria-label="View full-size figure for One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation">
+                  <img src="images/2026OneScanIsEnough.png" alt="One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation" width="1859" height="840" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/abs/2610.33794">
             <span class="papertitle">One Scan is Enough: Demonstration-Free Adaptation for Language-Guided Navigation</span>
           </a>
           <br>
@@ -81,33 +73,17 @@
           <em>Conference on Neural Information Processing Systems (NeurIPS) 2026</em>
           <br>
           <a href="https://arxiv.org/abs/2610.33794">Paper</a>
-          <p></p>
           <p>
           Demonstration-free adaptation for language-guided navigation from a single iPhone scan.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="applianceplan_stop()" onmouseover="applianceplan_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='applianceplan_image'>
-            <img src='images/2026AppliancePlan.png' width="170"></div>
-            <img src='images/2026AppliancePlan.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function applianceplan_start() {
-              document.getElementById('applianceplan_image').style.opacity = "1";
-            }
-
-            function applianceplan_stop() {
-              document.getElementById('applianceplan_image').style.opacity = "0";
-            }
-            applianceplan_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2608.15863">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2026AppliancePlan.png" aria-label="View full-size figure for Scaling Manual-Grounded Appliance Manipulation with Data Synthesis and Unified Planning">
+                  <img src="images/2026AppliancePlan.png" alt="Scaling Manual-Grounded Appliance Manipulation with Data Synthesis and Unified Planning" width="2280" height="1638" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/abs/2608.15863">
             <span class="papertitle">Scaling Manual-Grounded Appliance Manipulation with Data Synthesis and Unified Planning</span>
           </a>
           <br>
@@ -120,33 +96,17 @@
 		  <a href="">Project</a>
 		  /
 		  <a href="">Code</a>
-          <p></p>
           <p>
           The first end-to-end appliance manipulation planning large model.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="vtinstructor_stop()" onmouseover="vtinstructor_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='vtinstructor_image'>
-            <img src='images/2026VTInstructor.png' width="170"></div>
-            <img src='images/2026VTInstructor.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function vtinstructor_start() {
-              document.getElementById('vtinstructor_image').style.opacity = "1";
-            }
-
-            function vtinstructor_stop() {
-              document.getElementById('vtinstructor_image').style.opacity = "0";
-            }
-            vtinstructor_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2608.15284">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2026VTInstructor.png" aria-label="View full-size figure for VTInstructor: Visual Trajectory Prompting for Navigation Instruction Generation in Continuous Environments">
+                  <img src="images/2026VTInstructor.png" alt="VTInstructor: Visual Trajectory Prompting for Navigation Instruction Generation in Continuous Environments" width="2586" height="1134" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/abs/2608.15284">
             <span class="papertitle">VTInstructor: Visual Trajectory Prompting for Navigation Instruction Generation in Continuous Environments</span>
           </a>
           <br>
@@ -159,33 +119,17 @@
 		  <a href="">Project</a>
 		  /
 		  <a href="https://github.com/TidalHarley/VTInstructor">Code</a>
-          <p></p>
           <p>
           The state-of-the-art navigation instruction generation model.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="embodied3dbench_stop()" onmouseover="embodied3dbench_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='embodied3dbench_image'>
-            <img src='images/2026Embodied3DBench.png' width="170"></div>
-            <img src='images/2026Embodied3DBench.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function embodied3dbench_start() {
-              document.getElementById('embodied3dbench_image').style.opacity = "1";
-            }
-
-            function embodied3dbench_stop() {
-              document.getElementById('embodied3dbench_image').style.opacity = "0";
-            }
-            embodied3dbench_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2605.29074">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2026Embodied3DBench.png" aria-label="View full-size figure for Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models">
+                  <img src="images/2026Embodied3DBench.png" alt="Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models" width="2310" height="1320" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/abs/2605.29074">
             <span class="papertitle">Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models</span>
           </a>
           <br>
@@ -198,33 +142,17 @@
 		  <a href="">Project</a>
 		  /
 		  <a href="">Code</a>
-          <p></p>
           <p>
           
           </p>
-        </td>
-      </tr>
-			  
-      <tr onmouseout="realappliance_stop()" onmouseover="realappliance_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='realappliance_image'>
-            <img src='images/2025RealAppliance.jpg' width="170"></div>
-            <img src='images/2025RealAppliance.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function realappliance_start() {
-              document.getElementById('realappliance_image').style.opacity = "1";
-            }
-
-            function realappliance_stop() {
-              document.getElementById('realappliance_image').style.opacity = "0";
-            }
-            realappliance_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://realappliance.github.io/">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2025RealAppliance.jpg" aria-label="View full-size figure for RealAppliance: Let High-fidelity Appliance Assets Controllable and Workable as Aligned Real Manuals">
+                  <img src="images/2025RealAppliance.jpg" alt="RealAppliance: Let High-fidelity Appliance Assets Controllable and Workable as Aligned Real Manuals" width="2183" height="1677" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://realappliance.github.io/">
             <span class="papertitle">RealAppliance: Let High-fidelity Appliance Assets Controllable and Workable as Aligned Real Manuals</span>
           </a>
           <br>
@@ -240,34 +168,17 @@
 		  <a href="https://github.com/gaoyz1235/RealAppliance">Code</a>
 		  /
 		  <a href="https://mp.weixin.qq.com/s/g0_vfxdakjnTV3mj2GMejQ">机器之心</a>
-          <p></p>
           <p>
           The first appliance digital assets controllable and workable as aligned real manuals.
           </p>
-        </td>
-      </tr>
-
-			
-      <tr onmouseout="navspace_stop()" onmouseover="navspace_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='navspace_image'>
-            <img src='images/2025NavSpace.jpg' width="170"></div>
-            <img src='images/2025NavSpace.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function navspace_start() {
-              document.getElementById('navspace_image').style.opacity = "1";
-            }
-
-            function navspace_stop() {
-              document.getElementById('navspace_image').style.opacity = "0";
-            }
-            navspace_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://navspace.github.io/">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2025NavSpace.jpg" aria-label="View full-size figure for NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions">
+                  <img src="images/2025NavSpace.jpg" alt="NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions" width="2232" height="803" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://navspace.github.io/">
             <span class="papertitle">NavSpace: How Navigation Agents Follow Spatial Intelligence Instructions</span>
           </a>
           <br>
@@ -282,33 +193,17 @@
 		  <a href="https://github.com/TidalHarley/NavSpace">Code</a>
 		  /
 		  <a href="https://xinwen.bjd.com.cn/content/s698f1a0ee4b0cd719e9da64a.html">北京日报</a>
-          <p></p>
           <p>
           The first benchmark and model for navigation spatial intelligence.
           </p>
-        </td>
-      </tr>
-			  
-      <tr onmouseout="correctnav_stop()" onmouseover="correctnav_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='correctnav_image'>
-            <img src='images/2025CorrectNav.jpg' width="170"></div>
-            <img src='images/2025CorrectNav.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function correctnav_start() {
-              document.getElementById('correctnav_image').style.opacity = "1";
-            }
-
-            function correctnav_stop() {
-              document.getElementById('correctnav_image').style.opacity = "0";
-            }
-            correctnav_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://correctnav.github.io/">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2025CorrectNav.jpg" aria-label="View full-size figure for CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model">
+                  <img src="images/2025CorrectNav.jpg" alt="CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model" width="2208" height="1134" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://correctnav.github.io/">
             <span class="papertitle">CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model</span>
           </a>
           <br>
@@ -321,34 +216,23 @@
 	  	   <a href="https://correctnav.github.io/">Project</a>
 		  /
 		  <a href="https://github.com/owlet914/CorrectNav">Code</a>
-	  
-          <p></p>
           <p>
           New SOTA Performance on R2R-CE and RxR-CE
           </p>
-        </td>
-      </tr>
-			  
-      <tr onmouseout="checkmanual_stop()" onmouseover="checkmanual_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='checkmanual_image'>
-            <img src='images/2025CVPR_CheckManual.jpg' width="170"></div>
-            <img src='images/2025CVPR_CheckManual.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function checkmanual_start() {
-              document.getElementById('checkmanual_image').style.opacity = "1";
-            }
-
-            function checkmanual_stop() {
-              document.getElementById('checkmanual_image').style.opacity = "0";
-            }
-            checkmanual_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://sites.google.com/view/checkmanual">
+                </div>
+              </article>
+            </section>
+            <section class="publication-year" aria-labelledby="publications-2025">
+              <div class="year-heading">
+                <h3 id="publications-2025">2025</h3>
+                <span>1 paper</span>
+              </div>
+              <article class="publication">
+                <a class="paper-image" href="images/2025CVPR_CheckManual.jpg" aria-label="View full-size figure for CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation">
+                  <img src="images/2025CVPR_CheckManual.jpg" alt="CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation" width="1678" height="1420" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://sites.google.com/view/checkmanual">
             <span class="papertitle">CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation</span>
           </a>
           <br>
@@ -364,33 +248,23 @@
 	  <a href="https://github.com/LYX0501/CheckManual">Code</a>
 	  /
 	  <a href="https://mp.weixin.qq.com/s/xsHcnIbJkhj1peDDbbAe3w">机器之心</a>
-          <p></p>
           <p>
           The first benchmark for manual-based appliance manipulation.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="manipllm_stop()" onmouseover="manipllm_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='manipllm_image'>
-            <img src='images/2024CVPR_ManipLLM.jpg' width="170"></div>
-            <img src='images/2024CVPR_ManipLLM.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function manipllm_start() {
-              document.getElementById('manipllm_image').style.opacity = "1";
-            }
-
-            function manipllm_stop() {
-              document.getElementById('manipllm_image').style.opacity = "0";
-            }
-            manipllm_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2312.16217">
+                </div>
+              </article>
+            </section>
+            <section class="publication-year" aria-labelledby="publications-2024">
+              <div class="year-heading">
+                <h3 id="publications-2024">2024</h3>
+                <span>4 papers</span>
+              </div>
+              <article class="publication">
+                <a class="paper-image" href="images/2024CVPR_ManipLLM.jpg" aria-label="View full-size figure for ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation">
+                  <img src="images/2024CVPR_ManipLLM.jpg" alt="ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation" width="1191" height="1086" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2312.16217">
             <span class="papertitle">ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation</span>
           </a>
           <br>
@@ -403,30 +277,14 @@
 		  <a href="https://sites.google.com/view/manipllm">Project</a>
 		  /
 		  <a href="https://github.com/clorislili/ManipLLM">Code</a>
-          <p></p>
-        </td>
-      </tr>
-		  
-      <tr onmouseout="instructnav_stop()" onmouseover="instructnav_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='InstructNav_image'>
-            <img src='images/2024InstructNav.jpg' width="170"></div>
-            <img src='images/2024InstructNav.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function instructnav_start() {
-              document.getElementById('InstructNav_image').style.opacity = "1";
-            }
-
-            function instructnav_stop() {
-              document.getElementById('InstructNav_image').style.opacity = "0";
-            }
-            instructnav_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2406.04882.pdf">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2024InstructNav.jpg" aria-label="View full-size figure for InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment">
+                  <img src="images/2024InstructNav.jpg" alt="InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment" width="3015" height="2249" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2406.04882.pdf">
             <span class="papertitle">InstructNav: Zero-shot System for Generic Instruction Navigation in Unexplored Environment</span>
           </a>
           <br>
@@ -441,33 +299,17 @@
 	  <a href="https://github.com/LYX0501/InstructNav">Code</a>
 	  /
 	  <a href="https://mp.weixin.qq.com/s/T145ZQlDBTWyX621mNVYGQ">量子位</a>
-          <p></p>
           <p>
           The first zero-shot generic instruction navigation system without any pre-built maps.
           </p>
-        </td>
-      </tr>
-    
-      <tr onmouseout="discussnav_stop()" onmouseover="discussnav_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='DiscussNav_image'>
-            <img src='images/2023DiscussNav.jpg' width="170"></div>
-            <img src='images/2023DiscussNav.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function discussnav_start() {
-              document.getElementById('DiscussNav_image').style.opacity = "1";
-            }
-
-            function discussnav_stop() {
-              document.getElementById('DiscussNav_image').style.opacity = "0";
-            }
-            discussnav_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2309.11382.pdf">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2023DiscussNav.jpg" aria-label="View full-size figure for Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions">
+                  <img src="images/2023DiscussNav.jpg" alt="Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions" width="814" height="777" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2309.11382.pdf">
             <span class="papertitle">Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions</span>
           </a>
           <br>
@@ -482,33 +324,17 @@
 	  <a href="https://github.com/LYX0501/DiscussNav">Code</a>
 	  /
 	  <a href="https://mp.weixin.qq.com/s/fJ99zkIyx_-xQglD-brCgg">量子位</a>
-          <p></p>
           <p>
           DiscussNav agent actively discusses with multiple domain experts before moving.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="pixelnav_stop()" onmouseover="pixelnav_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='PixelNav_image'>
-            <img src='images/2023PixNav.png' width="170"></div>
-            <img src='images/2023PixNav.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function pixelnav_start() {
-              document.getElementById('PixelNav_image').style.opacity = "1";
-            }
-
-            function pixelnav_stop() {
-              document.getElementById('PixelNav_image').style.opacity = "0";
-            }
-            pixelnav_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2309.10309">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2023PixNav.png" aria-label="View full-size figure for Bridging Zero-Shot Object Navigation and Foundation Models through Pixel-Guided Navigation Skill">
+                  <img src="images/2023PixNav.png" alt="Bridging Zero-Shot Object Navigation and Foundation Models through Pixel-Guided Navigation Skill" width="7549" height="4678" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2309.10309">
             <span class="papertitle">Bridging Zero-Shot Object Navigation and Foundation Models through Pixel-Guided Navigation Skill</span>
           </a>
           <br>
@@ -521,33 +347,23 @@
 	  <a href="https://sites.google.com/view/pixnav/">Project</a>
 	  /
 	  <a href="https://github.com/wzcai99/Pixel-Navigator">Code</a>
-          <p></p>
           <p>
           PixNav, a pure RGB-based navigation skill that uses a specified pixel as the goal and can navigate towards any object.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="dstc11_stop()" onmouseover="dstc11_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='DSTC11_image'>
-            <img src='images/2023DSTC11.jpg' width="170"></div>
-            <img src='images/2023DSTC11.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function dstc11_start() {
-              document.getElementById('DSTC11_image').style.opacity = "1";
-            }
-
-            function dstc11_stop() {
-              document.getElementById('DSTC11_image').style.opacity = "0";
-            }
-            dstc11_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://github.com/LYX0501/DAMO-ConvAI/tree/main/dstc11-simmc">
+                </div>
+              </article>
+            </section>
+            <section class="publication-year" aria-labelledby="publications-2023">
+              <div class="year-heading">
+                <h3 id="publications-2023">2023</h3>
+                <span>4 papers</span>
+              </div>
+              <article class="publication">
+                <a class="paper-image" href="images/2023DSTC11.jpg" aria-label="View full-size figure for Improving Situated Conversational Agents with Step-by-Step Multi-modal Logic Reasoning">
+                  <img src="images/2023DSTC11.jpg" alt="Improving Situated Conversational Agents with Step-by-Step Multi-modal Logic Reasoning" width="1564" height="1011" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://github.com/LYX0501/DAMO-ConvAI/tree/main/dstc11-simmc">
             <span class="papertitle">Improving Situated Conversational Agents with Step-by-Step Multi-modal Logic Reasoning</span>
           </a>
           <br>
@@ -560,33 +376,17 @@
 	  <a href="https://aclanthology.org/2023.dstc-1.3.pdf">Paper</a>
           /
           <a href="https://github.com/LYX0501/DAMO-ConvAI/tree/main/dstc11-simmc">Code</a>
-          <p></p>
           <p>
           We propose a dual-system framework to conduct multimodal logic reasoning step-by-step.
           </p>
-        </td>
-      </tr>
-            
-      <tr onmouseout="reg_stop()" onmouseover="reg_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='REG_image'>
-            <img src='images/2023MM_REG.png' width="170"></div>
-            <img src='images/2023MM_REG.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function reg_start() {
-              document.getElementById('REG_image').style.opacity = "1";
-            }
-
-            function reg_stop() {
-              document.getElementById('REG_image').style.opacity = "0";
-            }
-            reg_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2308.09977v1.pdf">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2023MM_REG.png" aria-label="View full-size figure for Whether you can locate or not? Interactive Referring Expression Generation">
+                  <img src="images/2023MM_REG.png" alt="Whether you can locate or not? Interactive Referring Expression Generation" width="801" height="742" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2308.09977v1.pdf">
             <span class="papertitle">Whether you can locate or not? Interactive Referring Expression Generation</span>
           </a>
           <br>
@@ -597,33 +397,17 @@
           <a href="https://arxiv.org/pdf/2308.09977v1.pdf">Paper</a>
           /
           <a href="https://github.com/superhero-7/ireg">Code</a>
-          <p></p>
           <p>
           We generate referring expressions by multi-round communications.
           </p>
-        </td>
-      </tr>
-            
-      <tr onmouseout="sure_stop()" onmouseover="sure_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='SURE_image'>
-            <img src='images/2023ACL_SURE.jpg' width="170"></div>
-            <img src='images/2023ACL_SURE.jpg' width="170">
-          </div>
-          <script type="text/javascript">
-            function sure_start() {
-              document.getElementById('SURE_image').style.opacity = "1";
-            }
-
-            function sure_stop() {
-              document.getElementById('SURE_image').style.opacity = "0";
-            }
-            sure_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2305.18212.pdf">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2023ACL_SURE.jpg" aria-label="View full-size figure for Multimodal Recommendation Dialog with Subjective Preference: A New Challenge and Benchmark">
+                  <img src="images/2023ACL_SURE.jpg" alt="Multimodal Recommendation Dialog with Subjective Preference: A New Challenge and Benchmark" width="1021" height="912" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2305.18212.pdf">
             <span class="papertitle">Multimodal Recommendation Dialog with Subjective Preference: A New Challenge and Benchmark</span>
           </a>
           <br>
@@ -632,33 +416,17 @@
           <em>Findings of the Association for Computational Linguistics (Findings of ACL) 2023</em>
           <br>
           <a href="https://arxiv.org/pdf/2305.18212.pdf">Paper</a>
-          <p></p>
           <p>
           A new dataset for multimodal recommendation dialog with subjective preferences.
           </p>
-        </td>
-      </tr>
-
-      <tr onmouseout="spring_stop()" onmouseover="spring_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='SPRING_image'>
-            <img src='images/2023AAAI_SPRING.png' width="170"></div>
-            <img src='images/2023AAAI_SPRING.png' width="170">
-          </div>
-          <script type="text/javascript">
-            function spring_start() {
-              document.getElementById('SPRING_image').style.opacity = "1";
-            }
-
-            function spring_stop() {
-              document.getElementById('SPRING_image').style.opacity = "0";
-            }
-            spring_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/pdf/2301.01949.pdf">
+                </div>
+              </article>
+              <article class="publication">
+                <a class="paper-image" href="images/2023AAAI_SPRING.png" aria-label="View full-size figure for SPRING: Situated Conversation Agent Pretrained with Multimodal Questions from Incremental Layout Graph">
+                  <img src="images/2023AAAI_SPRING.png" alt="SPRING: Situated Conversation Agent Pretrained with Multimodal Questions from Incremental Layout Graph" width="1428" height="763" loading="lazy" decoding="async">
+                </a>
+                <div class="paper-details">
+                  <a href="https://arxiv.org/pdf/2301.01949.pdf">
             <span class="papertitle">SPRING: Situated Conversation Agent Pretrained with Multimodal Questions from Incremental Layout Graph</span>
           </a>
           <br>
@@ -670,14 +438,13 @@
           <a href="https://arxiv.org/pdf/2301.01949.pdf">Paper</a>
           /
           <a href="https://github.com/LYX0501/SPRING">Code</a>
-          <p></p>
           <p>
           We improve the situated conversation agent through novel multimodal question-answering pretraining tasks.
           </p>
-        </td>
-      </tr>
-            
-          </tbody></table>
+                </div>
+              </article>
+            </section>
+          </section>
 
           <table class="info-card" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
