@@ -153,7 +153,7 @@ h2 {
 }
 
 .hero-card td {
-  padding: 36px 40px !important;
+  padding: 24px 40px !important;
 }
 
 .hero-copy p {
@@ -444,7 +444,7 @@ span.highlight {
   }
 
   .hero-card td {
-    padding: 28px !important;
+    padding: 20px 28px !important;
   }
 }
 
@@ -460,7 +460,10 @@ span.highlight {
     max-width: none !important;
   }
 
-  .hero-card td,
+  .hero-card td {
+    padding: 18px 24px !important;
+  }
+
   .info-card td {
     padding: 24px !important;
   }
@@ -592,3 +595,6 @@ span.highlight {
   .experience-row { grid-template-columns: 100px minmax(0, 1fr); gap: 8px 18px; }
   .experience-row > :last-child { grid-column: 2; }
 }
+
+.hero-copy > p:first-child { margin-top: 0; }
+.hero-copy > p:last-child { margin-bottom: 0; }
