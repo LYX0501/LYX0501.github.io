@@ -576,3 +576,19 @@ span.highlight {
 @media (max-width:760px) {
   .paper-links a { padding: 4px 12px; }
 }
+
+.experience-section { padding: 24px; }
+.experience-section h2 { margin-bottom: 18px; }
+.experience-row {
+  display: grid;
+  grid-template-columns: 140px 140px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+.experience-date { color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 600px) {
+  .experience-row { grid-template-columns: 100px minmax(0, 1fr); gap: 8px 18px; }
+  .experience-row > :last-child { grid-column: 2; }
+}
