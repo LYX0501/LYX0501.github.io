@@ -633,25 +633,26 @@ span.highlight {
 .topic-nav .topic-icon { width: 20px; height: 20px; }
 @media (max-width:760px) { .news-list li { grid-template-columns: 68px minmax(0, 1fr); gap: 12px; } }
 
-/* A quiet, fixed atmosphere behind the readable content cards. */
-body { isolation: isolate; background: #f3f8fc; }
+/* Soft aurora ribbons behind opaque, readable cards. */
+body { isolation: isolate; background: #f5faff; }
 .ambient-background {
   position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden;
-  background: radial-gradient(ellipse at 12% 20%, #dceef899, transparent 52%),
-              radial-gradient(ellipse at 90% 65%, #dcf5f580, transparent 48%),
-              linear-gradient(145deg, #f7faff, #edf5fa);
+  background: radial-gradient(ellipse at 85% 20%, #dff8f3, transparent 60%), linear-gradient(145deg, #f7fbff, #edf7fc);
 }
-.ambient-background::before {
-  content: ""; position: absolute; inset: -12%;
-  background: radial-gradient(ellipse at 30% 40%, #b9ddef48, transparent 42%),
-              radial-gradient(ellipse at 75% 55%, #c0e9e648, transparent 40%);
-  animation: ambient-drift 26s ease-in-out infinite alternate;
+.aurora-band {
+  position: absolute; width: 150vw; height: 48vh; left: -25vw;
+  border-radius: 48% 52% 46% 54% / 65% 55% 45% 35%;
+  border-top: 2px solid rgba(255,255,255,.65);
+  filter: blur(5px); transform-origin: center;
+  animation: aurora-flow 24s ease-in-out infinite alternate;
 }
-#ambient-particles { display: block; width: 100%; height: 100%; }
-@keyframes ambient-drift { to { transform: translate3d(3%, -3%, 0) scale(1.05); } }
-body.background-paused .ambient-background::before { animation-play-state: paused; }
-@media (prefers-reduced-motion: reduce) {
-  .ambient-background::before { animation: none; }
-  #ambient-particles { display: none; }
+.aurora-one { top: 5%; background: linear-gradient(170deg, transparent 12%, #bee8f36b 42%, #c6f5ea85 58%, transparent 83%); transform: rotate(16deg); }
+.aurora-two { top: 35%; background: linear-gradient(175deg, transparent 10%, #b9dbf370 42%, #d1f4f47a 65%, transparent 87%); transform: rotate(-14deg); animation-duration: 29s; animation-delay: -9s; }
+.aurora-three { top: 65%; background: linear-gradient(165deg, transparent 8%, #c4eafa75 45%, #c3ede566 65%, transparent 88%); transform: rotate(12deg); animation-duration: 32s; animation-delay: -17s; }
+@keyframes aurora-flow {
+  from { translate: -3% -5%; scale: 1; }
+  to { translate: 5% 9%; scale: 1.12 1.18; }
 }
+body.background-paused .aurora-band { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .aurora-band { animation: none; } }
 @media print { .ambient-background { display: none; } }
