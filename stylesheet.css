@@ -656,3 +656,13 @@ body { isolation: isolate; background: #f5faff; }
 body.background-paused .aurora-band { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .aurora-band { animation: none; } }
 @media print { .ambient-background { display: none; } }
+
+/* Keep six complete news entries visible, with older updates inside the list. */
+.news-list {
+  max-height: var(--news-visible-height, 340px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c2d3df transparent;
+}
+.news-list:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+@media print { .news-list { max-height: none; overflow: visible; } }
