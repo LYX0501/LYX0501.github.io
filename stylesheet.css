@@ -623,3 +623,5 @@ span.highlight {
   .awards-section { padding: 20px; }
   .awards-list li { grid-template-columns: 46px minmax(0, 1fr); gap: 14px; }
 }
+
+.news-icon { display: inline-block; margin-right: 5px; font-size: 16px; line-height: 1; }
