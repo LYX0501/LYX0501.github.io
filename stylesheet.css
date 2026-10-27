@@ -644,14 +644,14 @@ body { isolation: isolate; background: #f5faff; }
   border-radius: 48% 52% 46% 54% / 65% 55% 45% 35%;
   border-top: 2px solid rgba(255,255,255,.65);
   filter: blur(5px); transform-origin: center;
-  animation: aurora-flow 14s ease-in-out infinite alternate;
+  animation: aurora-flow 10s ease-in-out infinite alternate;
 }
 .aurora-one { top: 5%; background: linear-gradient(170deg, transparent 12%, #d2edf45c 42%, #def7ef70 58%, transparent 83%); transform: rotate(16deg); }
-.aurora-two { top: 35%; background: linear-gradient(175deg, transparent 10%, #d2e6f361 42%, #e0f6f469 65%, transparent 87%); transform: rotate(-14deg); animation-duration: 18s; animation-delay: -6s; }
-.aurora-three { top: 65%; background: linear-gradient(165deg, transparent 8%, #dceff966 45%, #def4ed59 65%, transparent 88%); transform: rotate(12deg); animation-duration: 21s; animation-delay: -12s; }
+.aurora-two { top: 35%; background: linear-gradient(175deg, transparent 10%, #d2e6f361 42%, #e0f6f469 65%, transparent 87%); transform: rotate(-14deg); animation-duration: 13s; animation-delay: -6s; }
+.aurora-three { top: 65%; background: linear-gradient(165deg, transparent 8%, #dceff966 45%, #def4ed59 65%, transparent 88%); transform: rotate(12deg); animation-duration: 16s; animation-delay: -12s; }
 @keyframes aurora-flow {
-  from { translate: -8% -14%; scale: 1; rotate: -3deg; }
-  to { translate: 9% 19%; scale: 1.16 1.24; rotate: 4deg; }
+  from { translate: -10% -22%; scale: 1; rotate: -5deg; }
+  to { translate: 11% 28%; scale: 1.16 1.24; rotate: 6deg; }
 }
 body.background-paused .aurora-band { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .aurora-band { animation: none; } }
