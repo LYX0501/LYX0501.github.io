@@ -666,3 +666,15 @@ body.background-paused .aurora-band { animation-play-state: paused; }
 }
 .news-list:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
 @media print { .news-list { max-height: none; overflow: visible; } }
+
+/* Shared lightweight icons reinforce section and news hierarchy. */
+h2:has(.section-icon) { display: flex; align-items: center; gap: 11px; }
+.section-icon { width: 27px; height: 27px; flex: 0 0 27px; color: var(--link); }
+.detail-icon, .news-item-icon { width: 18px; height: 18px; color: var(--link); vertical-align: -3px; margin-right: 8px; flex: 0 0 auto; }
+.news-list p { position: relative; padding-left: 26px; }
+.news-item-icon { position: absolute; left: 0; top: 4px; margin: 0; }
+.award-icon { color: #a88649; }
+@media (max-width: 600px) {
+  .section-icon { width: 23px; height: 23px; flex-basis: 23px; }
+  h2:has(.section-icon) { gap: 9px; }
+}
