@@ -15,7 +15,22 @@ Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as
 
 CheckManual and DiscussNav were downloaded through the channel owner’s YouTube Studio and saved locally by the user. The page embeds their local MP4 files; no YouTube player or sign-in is required. Original figures remain available through the Figure links.
 
-## Additional demonstration sources
+## Four-panel homepage videos
+
+Updated on 2026-10-27. Four publications now use a single locally composed 2×2 MP4: `realappliance-grid.mp4`, `correctnav-grid.mp4`, `instructnav-grid.mp4`, and `pixnav-grid.mp4`. Each panel is 480×270 with a 4 px white divider; output is 964×544, H.264, 24 fps, no audio. Short inputs loop independently at their original playback speed so every panel remains animated. Native controls allow fullscreen viewing. Original single-scene files and project links remain available.
+
+| Publication | Official sources and edit |
+| --- | --- |
+| RealAppliance | `https://realappliance.github.io/video/full1_batch.mp4` through `full4_batch.mp4`: four different appliance assets, starting at 0 s, 18 s total. Full frames fit within each tile without stretching. |
+| CorrectNav | `https://correctnav.github.io/18.mp4`, `19.mp4`, `20.mp4`, `1.mp4`: start at 15, 5, 5, 7 s respectively, 20 s total. Four real-robot navigation demonstrations, original instruction overlays retained. |
+| InstructNav | Official CoRL supplementary video linked below. Office and apartment panels start at 132.8 s; library and teaching-building panels start at 156 s; 18 s total. Crops `(x,y,w,h)` are `(68,54,538,302)`, `(672,54,538,302)`, `(68,54,538,302)`, `(68,414,538,302)`. Scene labels retained; slide instructions and wide outer margins removed. |
+| PixNav | Official `wzcai99/Pixel-Navigator` repository, `assets/objnav_fps.mp4`, `objnav_fps2.mp4`, `fps_hm3d.mp4`, `fps_mp3d.mp4`. Start at 14, 19, 0, 0 s; 18 s total. First two crops are `(0,60,640,360)`; last two use the moving right-hand navigation panel `(640,60,640,360)`. All panels are simulation. |
+
+AppliancePlan already contains four simultaneous appliance scenes and retains its official composite. CheckManual, DiscussNav, and ManipLLM retain their existing single-demo presentation. VTInstructor and NavSpace retain figures as explicitly requested. The additional ManipLLM video inspected at `https://drive.google.com/file/d/1jn6u7D36d_sgc-aXcpqP39M0bZht0wH2/view` is a narrated presentation with narrow portrait robot footage; it was not used for a landscape grid.
+
+Backup before this change: `backup/before-four-panel-videos-2026-10-27` (commit `c862250`).
+
+### Original downloaded demonstrations
 
 | Publication | Download source | Homepage treatment |
 | --- | --- | --- |
