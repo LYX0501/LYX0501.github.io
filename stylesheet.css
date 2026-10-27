@@ -584,7 +584,7 @@ span.highlight {
 .experience-section h2 { margin-bottom: 18px; }
 .experience-row {
   display: grid;
-  grid-template-columns: 140px 140px minmax(0, 1fr);
+  grid-template-columns: 140px 240px minmax(0, 1fr);
   align-items: center;
   gap: 24px;
   padding: 22px 0;
@@ -598,3 +598,17 @@ span.highlight {
 
 .hero-copy > p:first-child { margin-top: 0; }
 .hero-copy > p:last-child { margin-bottom: 0; }
+
+.experience-company { display: flex; align-items: center; gap: 24px; }
+.company-logo { display: block; width: 120px; height: 36px; object-fit: contain; }
+.services-section { padding: 24px 26px; }
+.service-role { margin: 16px 0 8px; font-weight: 700; color: var(--muted); }
+.service-years { margin: 0; }
+.service-years > div { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 12px; padding: 12px 0; border-top: 1px solid var(--border); }
+.service-years dt { color: var(--muted); font-variant-numeric: tabular-nums; }
+.service-years dd { margin: 0; }
+@media (max-width:600px) {
+  .experience-company { gap: 12px; flex-wrap: wrap; }
+  .company-logo { width: 100px; height: 30px; }
+  .service-years > div { grid-template-columns: 46px minmax(0, 1fr); }
+}
