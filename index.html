@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Yuxing Long's academic homepage, featuring research on robot manipulation and embodied navigation.">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261027-autoplay">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261027-local-videos">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
   </head>
 
@@ -183,11 +183,12 @@
                 <h3 id="publications-2025">2025</h3>
               </div>
               <article class="publication">
-                <button class="video-preview" type="button" data-video-kind="embed" data-video-src="https://www.youtube.com/embed/kCsNOwXTlvs?autoplay=1&amp;rel=0" data-video-url="https://www.youtube.com/watch?v=kCsNOwXTlvs" data-video-title="CheckManual — Real-robot demo" aria-label="Play CheckManual real-robot demonstration" aria-haspopup="dialog">
-                  <img src="https://i.ytimg.com/vi/kCsNOwXTlvs/hqdefault.jpg" data-fallback="images/2025CVPR_CheckManual.jpg" alt="CheckManual demonstration preview" width="1280" height="720" loading="lazy" decoding="async">
-                  <span class="play-icon" aria-hidden="true">▶</span>
-                  <span class="video-label">Real-robot demo</span>
-                </button>
+                <div class="paper-media">
+                  <video class="paper-video" autoplay muted loop playsinline controls preload="metadata" poster="videos/checkmanual-poster.jpg" aria-label="CheckManual real-robot demonstration">
+                    <source src="videos/checkmanual.mp4" type="video/mp4">
+                    <a href="videos/checkmanual.mp4">Watch the demonstration</a>
+                  </video>
+                </div>
                 <div class="paper-details">
                   <h4><a href="https://sites.google.com/view/checkmanual"><span class="papertitle">CheckManual: A New Challenge and Benchmark for Manual-based Appliance Manipulation</span></a></h4>
                   <div class="paper-authors"><strong>Yuxing Long</strong>, Jiyao Zhang, Mingjie Pan, Tianshu Wu, Taewhan Kim, Hao Dong</div>
@@ -197,7 +198,7 @@
 <a href="https://sites.google.com/view/checkmanual">Project</a>
 <a href="https://github.com/LYX0501/CheckManual">Code</a>
 <a href="https://mp.weixin.qq.com/s/xsHcnIbJkhj1peDDbbAe3w">机器之心</a>
-<a href="https://www.youtube.com/watch?v=kCsNOwXTlvs">Video</a>
+<a href="videos/checkmanual.mp4">Video</a>
 <a href="images/2025CVPR_CheckManual.jpg">Figure</a></div>
                   <p>
           The first benchmark for manual-based appliance manipulation.
@@ -247,11 +248,12 @@
                 </div>
               </article>
               <article class="publication">
-                <button class="video-preview" type="button" data-video-kind="embed" data-video-src="https://www.youtube.com/embed/vsU3i1pkfD0?autoplay=1&amp;rel=0" data-video-url="https://www.youtube.com/watch?v=vsU3i1pkfD0" data-video-title="DiscussNav — Real-robot demo" aria-label="Play DiscussNav real-robot demonstration" aria-haspopup="dialog">
-                  <img src="https://i.ytimg.com/vi/vsU3i1pkfD0/hqdefault.jpg" data-fallback="images/2023DiscussNav.jpg" alt="DiscussNav demonstration preview" width="1280" height="720" loading="lazy" decoding="async">
-                  <span class="play-icon" aria-hidden="true">▶</span>
-                  <span class="video-label">Real-robot demo</span>
-                </button>
+                <div class="paper-media">
+                  <video class="paper-video" autoplay muted loop playsinline controls preload="metadata" poster="videos/discussnav-poster.jpg" aria-label="DiscussNav real-robot demonstration">
+                    <source src="videos/discussnav.mp4" type="video/mp4">
+                    <a href="videos/discussnav.mp4">Watch the demonstration</a>
+                  </video>
+                </div>
                 <div class="paper-details">
                   <h4><a href="https://arxiv.org/pdf/2309.11382.pdf"><span class="papertitle">Discuss Before Moving: Visual Language Navigation via Multi-expert Discussions</span></a></h4>
                   <div class="paper-authors"><strong>Yuxing Long</strong>, Xiaoqi Li, Wenzhe Cai, Hao Dong</div>
@@ -260,7 +262,7 @@
 <a href="https://sites.google.com/view/discussnav">Project</a>
 <a href="https://github.com/LYX0501/DiscussNav">Code</a>
 <a href="https://mp.weixin.qq.com/s/fJ99zkIyx_-xQglD-brCgg">量子位</a>
-<a href="https://www.youtube.com/watch?v=vsU3i1pkfD0">Video</a>
+<a href="videos/discussnav.mp4">Video</a>
 <a href="images/2023DiscussNav.jpg">Figure</a></div>
                   <p>
           DiscussNav agent actively discusses with multiple domain experts before moving.
@@ -398,14 +400,5 @@
         </td>
       </tr>
     </table>
-    <dialog id="video-dialog" aria-labelledby="video-title">
-      <div class="video-dialog-header">
-        <h2 id="video-title">Research demo</h2>
-        <button class="video-close" type="button" aria-label="Close video" autofocus>×</button>
-      </div>
-      <div id="video-player" class="video-player"></div>
-      <a id="video-external" target="_blank" rel="noopener noreferrer">Open original video ↗</a>
-    </dialog>
-    <script src="media.js?v=20261027-autoplay" defer></script>
   </body>
 </html>

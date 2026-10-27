@@ -485,57 +485,6 @@ span.highlight {
   .publication { min-height: 0; gap: 18px; }
   .paper-image, .paper-media { height: 190px; max-width: 440px; width: 100%; margin: 0 auto; }
 }
-.video-preview {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  padding: 0;
-  border: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  background: #e9eef5;
-  color: white;
-  font: inherit;
-}
-.video-preview img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.video-preview.diagram-poster img { object-fit: contain; background: white; }
-.play-icon {
-  position: absolute;
-  top: 50%; left: 50%; transform: translate(-50%, -50%);
-  display: grid; place-items: center;
-  width: 48px; height: 48px;
-  padding-left: 3px;
-  border-radius: 50%;
-  background: rgba(15, 23, 42, .78);
-  box-shadow: 0 3px 14px rgba(0, 0, 0, .2);
-  font-size: 20px;
-}
-.video-preview:hover .play-icon { background: #1f67b6; }
-.video-preview:focus-visible, .video-close:focus-visible { outline: 3px solid #1f67b6; outline-offset: 4px; }
-.video-label {
-  position: absolute; bottom: 9px; left: 10px;
-  padding: 2px 8px; border-radius: 4px;
-  background: rgba(15, 23, 42, .82);
-  font-size: 11px; letter-spacing: .02em;
-}
-#video-dialog {
-  width: min(960px, calc(100% - 28px));
-  max-height: calc(100dvh - 28px);
-  margin: auto; padding: 20px;
-  border: 1px solid var(--border); border-radius: 18px;
-  background: #fff; color: var(--text);
-  box-shadow: 0 24px 80px rgba(0,0,0,.28);
-}
-#video-dialog::backdrop { background: rgba(15,23,42,.68); }
-.video-dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
-.video-dialog-header h2 { font-size: 19px; }
-.video-close { border: 0; border-radius: 50%; width: 40px; height: 40px; flex-shrink: 0; font-size: 28px; background: #edf3fa; color: var(--text); cursor: pointer; }
-.video-player { aspect-ratio: 16/9; background: #101820; border-radius: 8px; overflow: hidden; }
-.video-player iframe, .video-player video { width: 100%; height: 100%; border: 0; display: block; }
-#video-external { display: inline-block; margin-top: 12px; font-size: 14px; }
 @media (max-width:760px) {
-  .video-preview { max-width: 440px; margin: 0 auto; }
   .paper-links a { padding: 4px 12px; }
-  #video-dialog { padding: 14px; }
 }

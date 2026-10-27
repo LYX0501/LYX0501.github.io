@@ -1,6 +1,6 @@
 # Publication media
 
-Verified on 2026-10-27. AppliancePlan, CorrectNav, and ManipLLM are mirrored in `videos/` as compressed H.264 MP4 files without audio. Their inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video.
+Verified on 2026-10-27. AppliancePlan, CorrectNav, ManipLLM, CheckManual, and DiscussNav are mirrored in `videos/` as compressed H.264 MP4 files without audio. Their inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video.
 
 | Publication | Official source | Selected video |
 | --- | --- | --- |
@@ -13,9 +13,9 @@ Verified on 2026-10-27. AppliancePlan, CorrectNav, and ManipLLM are mirrored in 
 | InstructNav | https://sites.google.com/view/instructnav | https://www.youtube.com/watch?v=eo3MgcgHkiM |
 | PixNav | https://sites.google.com/view/pixnav/ | https://www.youtube.com/watch?v=4Lsu0bLcAzQ |
 
-CheckManual and DiscussNav currently retain YouTube preview buttons while their original downloads are pending. NavSpace, InstructNav, and PixNav have project-video links. Original figures remain available through the Figure links.
+CheckManual and DiscussNav were downloaded through the channel owner’s YouTube Studio and saved locally by the user. The page embeds their local MP4 files; no YouTube player or sign-in is required. NavSpace, InstructNav, and PixNav have project-video links. Original figures remain available through the Figure links.
 
-YouTube may require visitors to sign in. Every player provides an original-video link, and the paper figures remain available through the Figure links.
+The table preserves the original video sources. Full-size paper figures remain available through the Figure links.
 
 The DSTC11 and SPRING figures use CSS viewports to remove their empty top margins (230 px and 155 px respectively). This preserves all scientific labels and the original image files; clicking a figure opens its original source.
 
