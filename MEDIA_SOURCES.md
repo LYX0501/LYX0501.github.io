@@ -1,6 +1,6 @@
 # Publication media
 
-Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Their inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all ten videos on initial page load.
+Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as compressed H.264 MP4 files without audio. Eight are displayed inline; VTInstructor and NavSpace use their original figures, with video links retained at the user's request. The inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video. `videos.js` loads each video as its card approaches the viewport to avoid transferring all eight inline videos on initial page load.
 
 | Publication | Official source | Selected video |
 | --- | --- | --- |
@@ -15,13 +15,13 @@ Verified on 2026-10-27. Ten official demonstrations are mirrored in `videos/` as
 
 CheckManual and DiscussNav were downloaded through the channel owner’s YouTube Studio and saved locally by the user. The page embeds their local MP4 files; no YouTube player or sign-in is required. Original figures remain available through the Figure links.
 
-## Additional inline demonstrations
+## Additional demonstration sources
 
 | Publication | Download source | Homepage treatment |
 | --- | --- | --- |
-| VTInstructor | https://raw.githubusercontent.com/TidalHarley/VTInstructor/main/docs/static/video/vtp1.mp4 | Right-hand visual trajectory prompt panel, crop 770×420 at (770, 0). Official project: https://tidalharley.github.io/VTInstructor/ (CC BY-SA 4.0). |
+| VTInstructor | https://raw.githubusercontent.com/TidalHarley/VTInstructor/main/docs/static/video/vtp1.mp4 | Original figure displayed; linked video retains the right-hand visual trajectory prompt panel, crop 770×420 at (770, 0). Official project: https://tidalharley.github.io/VTInstructor/ (CC BY-SA 4.0). |
 | RealAppliance | https://realappliance.github.io/video/full1_batch.mp4 | Complete simulated appliance demonstration, resized. Explicitly labeled as simulation. |
-| NavSpace | https://navspace.github.io/navspace_new.mp4 | Real-robot excerpt 135–155 seconds, top-middle robot panel cropped to 372×210 at (462, 94). Full project video remains linked. |
+| NavSpace | https://navspace.github.io/navspace_new.mp4 | Original figure displayed. Archived video is a real-robot excerpt 135–155 seconds, top-middle robot panel cropped to 372×210 at (462, 94). Full project video remains linked. |
 | InstructNav | https://openreview.net/attachment?id=fCDOfpTCzZ&name=supplementary_material | Official CoRL 2024 supplement, `corl_sup/InstructNav_Video.mp4`. Real-robot excerpt 132–152 seconds, top-right panel cropped to 540×356 at (668, 0). Paper page: https://openreview.net/forum?id=fCDOfpTCzZ (CC BY 4.0). |
 | PixNav | https://raw.githubusercontent.com/wzcai99/Pixel-Navigator/master/assets/objnav_fps.mp4 | Complete simulated navigation demonstration, resized. Explicitly labeled as simulation. |
 
