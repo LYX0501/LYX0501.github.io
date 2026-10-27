@@ -57,3 +57,5 @@ Added on 2026-10-27 at the user’s request. `videos/onescan.mp4` is a web-optim
 Backup before this change: `backup/before-onescan-video-2026-10-27` (commit `1e2b46c`).
 
 Video captions removed on 2026-10-27. All players now share the same centered 190 px media area without caption spacing. Backup: `backup/before-remove-video-captions-2026-10-27` (commit `9c0bb69`).
+
+One Scan crop update (2026-10-27): the inline player now uses `onescan-cropped.mp4`. A fixed 1872×1080 crop at (50,124) from the original 1972×1330 source removes the slide heading, bottom progress/navigation bar, and outer margins. The full sequence and original speed remain; central diagram labels and statistics remain part of the demonstration. Output is 960×554, H.264, 24 fps, muted, with a poster from 5 s. The uncropped copy remains archived as `onescan.mp4`. Backup: `backup/before-onescan-crop-2026-10-27` (commit `07764b2`).
