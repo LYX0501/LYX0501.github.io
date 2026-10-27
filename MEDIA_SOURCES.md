@@ -1,9 +1,10 @@
 # Publication media
 
-Verified on 2026-10-27. Videos remain hosted by their official project pages or the platforms linked from those pages. Players load only after a visitor clicks a preview.
+Verified on 2026-10-27. AppliancePlan, CorrectNav, and ManipLLM are mirrored in `videos/` as compressed H.264 MP4 files without audio. Their inline players use `autoplay muted loop playsinline`; native controls allow pausing and full-screen viewing. Each poster is a frame from the corresponding video.
 
 | Publication | Official source | Selected video |
 | --- | --- | --- |
+| AppliancePlan | https://niko-kang.github.io/UseAppliance/ | https://niko-kang.github.io/UseAppliance/assets/videos/robot-mechanical.mp4?v=2 |
 | CorrectNav | https://correctnav.github.io/ | https://correctnav.github.io/18.mp4 |
 | CheckManual | https://sites.google.com/view/checkmanual | https://www.youtube.com/watch?v=kCsNOwXTlvs |
 | DiscussNav | https://sites.google.com/view/discussnav | https://www.youtube.com/watch?v=vsU3i1pkfD0 |
@@ -12,10 +13,10 @@ Verified on 2026-10-27. Videos remain hosted by their official project pages or 
 | InstructNav | https://sites.google.com/view/instructnav | https://www.youtube.com/watch?v=eo3MgcgHkiM |
 | PixNav | https://sites.google.com/view/pixnav/ | https://www.youtube.com/watch?v=4Lsu0bLcAzQ |
 
-The first four have preview buttons; the remaining three have project-video links. The CorrectNav poster is a frame captured from its official video. CheckManual and DiscussNav use the thumbnail URLs returned by YouTube oEmbed. If those thumbnails fail, the original paper figures are shown. ManipLLM uses its paper figure as the preview.
+CheckManual and DiscussNav currently retain YouTube preview buttons while their original downloads are pending. NavSpace, InstructNav, and PixNav have project-video links. Original figures remain available through the Figure links.
 
 YouTube may require visitors to sign in. Every player provides an original-video link, and the paper figures remain available through the Figure links.
 
 The DSTC11 and SPRING figures use CSS viewports to remove their empty top margins (230 px and 155 px respectively). This preserves all scientific labels and the original image files; clicking a figure opens its original source.
 
-Pre-update backup: `backup/before-media-polish-2026-10-27` (commit `3807311`).
+Pre-autoplay backup: `backup/before-autoplay-2026-10-27` (commit `205a871`). All publication media areas are capped at 190 px; desktop cards share a 232 px minimum height while longer text can expand naturally.
