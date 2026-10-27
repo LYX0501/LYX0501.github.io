@@ -625,3 +625,10 @@ span.highlight {
 }
 
 .news-icon { display: inline-block; margin-right: 5px; font-size: 16px; line-height: 1; }
+
+.news-list li { grid-template-columns: 80px minmax(0, 1fr); }
+.news-list time { white-space: nowrap; }
+.topic-heading h3, .topic-nav a { display: inline-flex; align-items: center; gap: 9px; }
+.topic-icon { width: 30px; height: 30px; flex: 0 0 auto; color: var(--link); }
+.topic-nav .topic-icon { width: 20px; height: 20px; }
+@media (max-width:760px) { .news-list li { grid-template-columns: 68px minmax(0, 1fr); gap: 12px; } }

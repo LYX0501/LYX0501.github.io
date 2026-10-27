@@ -8,3 +8,5 @@ The GitHub and Google Scholar paths in `images/link-icons.svg` come from Simple 
 Document, globe, and envelope icons are simple original SVG drawings. The academic social-icon convention was informed by Pascal Michaillat’s academic website template: https://pascalmichaillat.org/b/ . No template code was copied.
 
 All icons are served locally in one SVG sprite, inherit the link color, and are decorative (`aria-hidden`); visible text remains the accessible link name.
+
+The robot arm, robot dog, and brain in images/topic-icons.svg are original line icons drawn for this homepage.

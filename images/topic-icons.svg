@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<symbol id="arm" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 28h16M7 28v-4h10v4M10 24l-3-9 8-8 8 5M14 24l-3-8 6-6 5 4M24 15v5m-3-1v4l3 2m3-6v4l-3 2"/><circle cx="9" cy="15" r="2.5"/><circle cx="16" cy="8" r="2.5"/><circle cx="24" cy="13" r="2.5"/></g></symbol>
+<symbol id="robot-dog" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="10" width="17" height="8" rx="2"/><path d="M24 12l3-3 3 1v6h-6M7 12l-4-3M9 18l-3 5 2 5H5m9-10 1 5-2 5h3m4-10-1 5 3 5h-3m5-10 3 5-1 5h3M12 10V7h6v3"/><circle cx="27.5" cy="12.5" r=".6" fill="currentColor"/></g></symbol>
+<symbol id="brain" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 7c-1-5-8-4-8 1-5 0-6 6-3 9-3 5 1 9 5 8 1 5 6 4 6 0V7Zm0 0c1-5 8-4 8 1 5 0 6 6 3 9 3 5-1 9-5 8-1 5-6 4-6 0M8 8v5l4 2m-7 2h5l2 4m12-13v5l-4 2m7 2h-5l-2 4M10 25v-3m12 3v-3"/></g></symbol>
+</svg>
