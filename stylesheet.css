@@ -544,9 +544,6 @@ span.highlight {
 .hero-copy .name { margin-bottom: 22px; }
 .paper-media { min-width: 0; display: flex; align-items: center; height: 190px; }
 .paper-video { display: block; width: 100%; max-height: 190px; border-radius: 10px; background: #fff; object-fit: contain; }
-.paper-media--captioned { flex-direction: column; justify-content: center; gap: 6px; }
-.paper-media--captioned .paper-video { max-height: 166px; }
-.media-caption { font-size: 11px; line-height: 1.4; color: var(--muted); letter-spacing: .02em; }
 @media (max-width: 760px) {
   .publication { min-height: 0; gap: 18px; }
   .paper-image, .paper-media { height: 190px; max-width: 440px; width: 100%; margin: 0 auto; }

@@ -40,7 +40,7 @@ Backup before this change: `backup/before-four-panel-videos-2026-10-27` (commit 
 | InstructNav | https://openreview.net/attachment?id=fCDOfpTCzZ&name=supplementary_material | Official CoRL 2024 supplement, `corl_sup/InstructNav_Video.mp4`. Real-robot excerpt 132–152 seconds, top-right panel cropped to 540×356 at (668, 0). Paper page: https://openreview.net/forum?id=fCDOfpTCzZ (CC BY 4.0). |
 | PixNav | https://raw.githubusercontent.com/wzcai99/Pixel-Navigator/master/assets/objnav_fps.mp4 | Complete simulated navigation demonstration, resized. Explicitly labeled as simulation. |
 
-The added captions distinguish real-robot footage from simulation and method demonstrations. Full project links and original figure links remain available. One Scan is Enough uses the user-supplied video, with Figure 1 retained through its Figure link. No suitable paper-specific official demonstrations were found for Embodied3DBench or the four 2023 publications; their figures remain unchanged.
+Visible captions below all videos were removed at the user’s request; descriptive accessibility labels and this source record retain the media types. Full project links and original figure links remain available. One Scan is Enough uses the user-supplied video, with Figure 1 retained through its Figure link. No suitable paper-specific official demonstrations were found for Embodied3DBench or the four 2023 publications; their figures remain unchanged.
 
 Pre-expansion backup: `backup/before-more-demos-2026-10-27` (commit `15e09cb`).
 
@@ -55,3 +55,5 @@ Pre-autoplay backup: `backup/before-autoplay-2026-10-27` (commit `205a871`). All
 Added on 2026-10-27 at the user’s request. `videos/onescan.mp4` is a web-optimized copy of the supplied video (38.69 s, 1972×1330 source). The entire frame and duration are preserved, resized to 960×648, H.264 / yuv420p, 24 fps, no audio, with fast-start metadata. Native muted autoplay, loop, inline playback, and controls match the other demonstrations. Figure 1 remains linked. The original local file is unchanged.
 
 Backup before this change: `backup/before-onescan-video-2026-10-27` (commit `1e2b46c`).
+
+Video captions removed on 2026-10-27. All players now share the same centered 190 px media area without caption spacing. Backup: `backup/before-remove-video-captions-2026-10-27` (commit `9c0bb69`).
